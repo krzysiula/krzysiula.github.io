@@ -53,14 +53,14 @@
         var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
         var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-        // Display the result in the element with id="demo"
-        document.getElementById("demo").innerHTML = days + " dni " + hours + " godz " +
+        // Display the result in the element with id="counter"
+        document.getElementById("counter").innerHTML = days + " dni " + hours + " godz " +
             minutes + " min " + seconds + " sec ";
 
         // If the count down is finished, write some text
         if (distance < 0) {
             clearInterval(x);
-            document.getElementById("demo").innerHTML = "EXPIRED";
+            document.getElementById("counter").innerHTML = "EXPIRED";
         }
     }, 1000);
 </script>
@@ -84,8 +84,7 @@
             <p class="lead">31 Lipca, 2021. Kielce, Polska</p>
 
             <p> do śłubu pozostało:</p>
-            <!-- Display the countdown timer in an element -->
-            <h2 id="demo"></h2>
+            <p id="counter"></p>
 
             <img src="img/summer.jpg" class="img-fluid img-thumbnail" alt="nasze zdjecie">
 
