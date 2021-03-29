@@ -54,9 +54,7 @@ text-align: left;
 margin: 20px 0px 0px 0px;
 }
 
-li {
-  list-style-type: none;
-}
+
 
 #wedding {
   max-width: 100%;
@@ -141,7 +139,6 @@ text-align: center;
   .names {
   color: #051842;
   -webkit-text-stroke: 1px #cfac47;
-  text-shadow: 2px 2px 5px #051842;
   }
 
 h2 {
