@@ -86,10 +86,13 @@ padding: 20px 20px 5px 20px;
   }
 
 #slub { 
-  margin: 50px 25px 10px 10px;
+  margin: 50px 20px 10px 10px;
   padding: 20px 10px 5px 20px;
   }
 
+.download {
+  margin: 0px 20px 0px 20px;
+}
 
 .slub-info { 
     margin: 0px 10px 10px 60px;
@@ -97,7 +100,7 @@ padding: 20px 20px 5px 20px;
     }
 
 #wesele {
-  margin: 50px 25px 10px 10px;
+  margin: 50px 20px 10px 10px;
   padding: 20px 20px 5px 20px;
     }
 
