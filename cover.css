@@ -286,8 +286,17 @@ margin: 60px 0px 0px 0px;
 }
 
 .click:hover {
-color: #cfac47
+color: #cfac47;
 }
+
+.click {
+  color: white;
+  }
+
+.gold {
+  color: #cfac47;
+}
+
 
 iframe {
  margin: 20px 0px 20px 0px; 
