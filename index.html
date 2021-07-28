@@ -61,7 +61,8 @@
         // If the count down is finished, write some text
         if (distance < 0) {
             clearInterval(x);
-            document.getElementById("counter").innerHTML = "EXPIRED";
+            document.getElementById("counter_text").innerHTML = "Stało się!";
+            document.getElementById("counter").innerHTML = "Jesteśmy już małżeństwem :)";
         }
     }, 1000);
 </script>
@@ -83,12 +84,11 @@
             <h1 class="cover-heading names">Urszula & Krzysztof</h1>
             <p class="lead date">31 lipca 2021, Kielce</p>
 
-            <p class="lead left">Do ślubu pozostało:</p>
+            <p class="lead left" id="counter_text">Do ślubu pozostało:</p>
             <p class="lead" id="counter"></p>
         </main>
 
     </div>
-    
 
     <footer class="footer">
         <div class="container">
