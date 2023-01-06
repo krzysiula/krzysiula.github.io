@@ -35,38 +35,6 @@
     <link href="cover.css" rel="stylesheet">
 </head>
 
-<script>
-    // Set the date we're counting down to
-    var countDownDate = new Date("Jul 31, 2021 16:30:00").getTime();
-
-    // Update the count down every 1 second
-    var x = setInterval(function() {
-
-        // Get today's date and time
-        var now = new Date().getTime();
-
-        // Find the distance between now and the count down date
-        var distance = countDownDate - now;
-
-        // Time calculations for days, hours, minutes and seconds
-        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-        // Display the result in the element with id="counter"
-        document.getElementById("counter").innerHTML = days + " dni " + hours + " godz. " +
-            minutes + " min. " + seconds + " sek. ";
-
-        // If the count down is finished, write some text
-        if (distance < 0) {
-            clearInterval(x);
-            document.getElementById("counter_text").innerHTML = "Stało się!";
-            document.getElementById("counter").innerHTML = "Jesteśmy już małżeństwem :)";
-        }
-    }, 1000);
-</script>
-
 <body class="text-center image">
     <div class="cover-container  w-80 h-80 mx-auto">
         <header class="masthead mb-auto">
@@ -83,11 +51,16 @@
         <main role="main" class="inner cover">
             <h1 class="cover-heading names">Urszula & Krzysztof</h1>
             <p class="lead date">31 lipca 2021, Kielce</p>
-
-            <p class="lead left" id="counter_text">Do ślubu pozostało:</p>
-            <p class="lead" id="counter"></p>
         </main>
 
+    </div>
+
+    <div class="container" id="trailer">
+        <video width="100%" poster="img/poster.jpg" controls>
+            <source src="https://media.wedflow.co/studio/hkvme4qh/deliverable/axh8ptwn/media/40eva31u/URSZULAKRZYSZTOFTRAILER_comp.mp4" type="video/mp4">
+            <img src="img/poster.jpg" width="100%">
+            Tu miało być wideo, ale wystąpiły problrmy techniczne
+        </video>
     </div>
 
     <footer class="footer">
